@@ -57,6 +57,13 @@ body {
   color: #fff;
   text-align: center;
 }
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.button.disabled {
+  background: #e5e5e5;
+}
+
 .button.main {
   background-color: #756157;
 }
@@ -64,11 +71,13 @@ body {
 .button.main:focus {
   background-color: #615048;
 }
-.button.main:active {
-  color: rgba(255, 255, 255, 0.3);
+
+.button.action {
+  background-color: #82B3D3;
 }
-.button.disabled {
-  background: #e5e5e5;
+.button.action:hover,
+.button.action:focus {
+  background-color: #68A2CA;
 }
 
 
@@ -166,8 +175,16 @@ body {
 .subscribe .section-text {
   color: #fff;
 }
+
 .subscribe .subscribe-form {
   text-align: center;
+}
+.subscribe .subscribe-email {
+  font-size: 18px;
+  line-height: 24px;
+}
+.subscribe .subscribe-email::placeholder {
+  color: #000;
 }
 
 .page-footer {
@@ -189,4 +206,80 @@ body {
 
 .footer-contact-phone:active {
   color: rgba(117, 97, 87, .30);
+}
+
+.hotel-catalog {
+  background: #fff;
+}
+
+.header-wrap {
+  background: rgba(131, 179, 211) url(../images/catalog-bg.jpg) no-repeat;
+  background-size: 100% auto;
+  color: #fff;
+}
+
+.header-wrap .breadcrumbs-link {
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+.catalog-header h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter .catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+}
+.catalog-filter .catalog-filter-title {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-filter .control-input {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+}
+
+
+.filter-results .section-caption {
+  text-align: left;
+}
+.filter-results .select-control {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+}
+.hotel-list h4 {
+  font-size: 24px;
+  line-height: 28px;
+}
+.hotel-list p {
+  font-size: 18px;
+  line-height: 21px;
+}
+.hotel-list .rating {
+  font-size: 16px;
+  line-height: 20px;
+  background: #f2f2f2;
+}
+.pagination .active {
+  background: #f2f2f2;
+  color: #000;
+}
+
+.subscribe.light {
+  background: #fff;
+}
+.subscribe.light .section-caption,
+.subscribe.light .section-text {
+  color: #333;
+}
+.subscribe.light .subscribe-email {
+  background-color: #f2f2f2;
 }
