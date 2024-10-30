@@ -22,7 +22,7 @@ body {
   line-height: 26px;
   color: #000;
 }
-.visually-hidden {
+/*.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -33,7 +33,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+}*/
 
 .section-caption {
   font-size: 30px;
@@ -84,7 +84,7 @@ body {
 .page-header {
   background: #fff;
   display: flex;
-  height: 64px;
+
 }
 
 .page-header .logo {
@@ -293,6 +293,32 @@ body {
   line-height: 78px;
 }
 
+.catalog-filter {
+  display: flex;
+}
+.catalog-filter fieldset {
+  padding: 0;
+}
+.catalog-filter .infra,
+.catalog-filter .hotel-type {
+
+  width: 150px;
+  margin-right: 70px;
+}
+.catalog-filter .price {
+  width: 300px;
+  margin-right: 70px;
+  margin-left: auto;
+}
+.catalog-filter .actions {
+  width: 190px;
+}
+
+.catalog-filter .catalog-filter-list {
+  padding: 0;
+  margin: 0;
+}
+
 .catalog-filter .catalog-filter-title {
   font-size: 20px;
   line-height: 24px;
@@ -307,6 +333,27 @@ body {
   line-height: 24px;
   color: #000;
   font-weight: 700;
+}
+
+.results-header {
+  display: flex;
+}
+.results-header .section-caption {
+  margin-right: auto;
+}
+.results-header .select-wrap {
+  margin-right: 70px;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+.hotel-list .hotel-card {
+  width: 32%;
 }
 
 
@@ -354,6 +401,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+}
+.page-footer,
+.page-header,
+.catalog-header,
+.catalog-filter,
+.filter-results {
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 html {
