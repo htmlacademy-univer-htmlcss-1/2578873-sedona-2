@@ -184,15 +184,36 @@ body {
 .city-advantages-list {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+
   list-style-type: none;
+  display: grid;
+  grid-template-areas:
+    "a1 img1 img1"
+    "a2 a3 a4"
+    "img2 img2 a5";
 }
+.city-advantages-item:nth-child(1) {
+  grid-area: a1;
+}
+.city-advantages-item:nth-child(2) {
+  grid-area: img1;
+}
+.city-advantages-item:nth-child(3) {
+  grid-area: a2;
+}
+.city-advantages-item:nth-child(4) {
+  grid-area: a3;
+}
+.city-advantages-item:nth-child(5) {
+  grid-area: a4;
+}
+.city-advantages-item:nth-child(6) {
+  grid-area: img2;
+}
+
 .city-advantages-list .city-advantages-item {
   text-align: center;
   background: rgba(131, 179, 211, .12);
-  width: 33.33%;
-  flex-grow: 1;
   height: 385px;
   display: flex;
   flex-direction: column;
@@ -205,14 +226,6 @@ body {
 }
 .city-advantages-list .city-advantages-item.item-variance {
   background: rgba(131, 179, 211, .20);
-}
-
-.city-advantages-list .city-advantages-item.item-picture {
-  width: 66.66%;
-  overflow: hidden;
-}
-.city-advantages-list .item-picture img {
-  vertical-align: middle;;
 }
 
 .city-advantages-list h3 {
@@ -468,14 +481,16 @@ body {
 }
 
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  justify-content: space-between;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
 }
 .hotel-list .hotel-card {
-  width: 32%;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
 }
 
 .filter-results {
