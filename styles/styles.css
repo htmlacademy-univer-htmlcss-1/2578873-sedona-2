@@ -355,11 +355,14 @@ body {
   padding: 0;
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 .footer-social-item {
   width: 48px;
   height: 40px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-contact-phone {
@@ -537,6 +540,48 @@ body {
   line-height: 20px;
   background: #f2f2f2;
 }
+
+.hotel-card {
+
+  display: grid;
+  grid-template-areas:
+    "img img"
+    "name name"
+    "cap price"
+    "details favorite"
+    "stars rating";
+  gap: 16px 20px;
+  grid-template-columns: 140px 140px;
+}
+.hotel-card img {
+  grid-area: img;
+}
+.hotel-card h4 {
+  grid-area: name;
+  margin: 0;
+}
+.hotel-card .caption {
+  grid-area: cap;
+  margin: 0;
+}
+.hotel-card .price {
+  grid-area: price;
+  margin: 0;
+  justify-self: end;
+}
+.hotel-card .button.main {
+  grid-area: details;
+}
+.hotel-card .button.action {
+  grid-area: favorite;
+}
+.hotel-card .stars {
+  grid-area: stars;
+}
+.hotel-card .rating {
+  grid-area: rating;
+}
+
 .pagination {
   list-style-type: none;
   display: flex;
